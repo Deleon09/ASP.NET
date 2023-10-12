@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\imagenes\\Foto.jpg"
     },
     {
+      "Id": "E:\\Udemy\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\imagenes\\net.png",
+      "PackagePath": "staticwebassets\\imagenes\\net.png"
+    },
+    {
       "Id": "E:\\Udemy\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

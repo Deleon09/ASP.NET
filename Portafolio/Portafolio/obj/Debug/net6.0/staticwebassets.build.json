@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G3b597ik2eueAvodsTevjreW2vLnifdwBCMZDTSrIRo=",
+  "Hash": "YtONKtyPugQWf36n21oepXGlIOva4LVmfX4PGkeX5lw=",
   "Source": "Portafolio",
   "BasePath": "_content/Portafolio",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\Foto.jpg"
+    },
+    {
+      "Identity": "E:\\Udemy\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\imagenes\\net.png",
+      "SourceId": "Portafolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Udemy\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\",
+      "BasePath": "_content/Portafolio",
+      "RelativePath": "imagenes/net.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\net.png"
     },
     {
       "Identity": "E:\\Udemy\\ASP.NET\\Portafolio\\Portafolio\\wwwroot\\js\\site.js",
