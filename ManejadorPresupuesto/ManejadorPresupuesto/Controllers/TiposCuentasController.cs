@@ -1,10 +1,19 @@
-﻿using ManejadorPresupuesto.Models;
+﻿using Dapper;
+using ManejadorPresupuesto.Models;
+using ManejadorPresupuesto.Servicios;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 
 namespace ManejadorPresupuesto.Controllers
 {
     public class TiposCuentasController: Controller
     {
+        private readonly IRepositorioTiposCuentas repositorioTiposCuentas;
+
+        public TiposCuentasController(IRepositorioTiposCuentas repositorioTiposCuentas)
+        {
+            this.repositorioTiposCuentas = repositorioTiposCuentas;
+        }
 
         public IActionResult Crear()
         {
@@ -12,12 +21,15 @@ namespace ManejadorPresupuesto.Controllers
         }
 
         [HttpPost]
-        public IActionResult Crear(TipoCuenta tipoCuenta)
+        public async Task<IActionResult> Crear(TipoCuenta tipoCuenta)
         {
             if(!ModelState.IsValid)
             {
                 return View(tipoCuenta);
             }
+
+            tipoCuenta.UsuarioId = 1;
+            await repositorioTiposCuentas.Crear(tipoCuenta);
 
             return View();
         }
